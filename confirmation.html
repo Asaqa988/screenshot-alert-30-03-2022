@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>confirmation </title>
+</head>
+<body>
+<h2>your information has been deleted </h2>
+<fieldset>
+<legend>Qa Students </legend>
+<p>Click the button to display a confirm box.</p>
+<label> how many students you have removed</label>
+<input id="numberOfStudents">
+<button id = "confirmButton" onclick="confirmFunction()">Click on me</button>
+<p id="confirmdemo"></p>
+<script>
+function confirmFunction()
+{
+var cb;
+var c=confirm("are you sure of the number ? ");
+if (c==true)
+  {
+  cb="You Clicked on OK!";
+  }
+else
+  {
+  cb="You Clicked on Cancel!";
+  }
+document.getElementById("confirmdemo").innerHTML=cb;
+}
+</script>
+</fieldset>
+</body>
+</html>
